@@ -72,6 +72,16 @@ class Main extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                   ),
                   hintText: 'Input your product name')),
+          Text('Product ID : ',
+              style: const TextStyle(
+                fontSize: 17,
+              )),
+          TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  hintText: 'Input your product ID')),
         ]),
       ),
     );
