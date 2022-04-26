@@ -18,6 +18,13 @@ class Main extends StatelessWidget {
             style: const TextStyle(
               fontWeight: FontWeight.bold,
             )),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: <Color>[
+            Colors.green,
+            Colors.blue
+          ])),
+        ),
         leading: IconButton(
           onPressed: () {},
           icon: Icon(Icons.arrow_back),
