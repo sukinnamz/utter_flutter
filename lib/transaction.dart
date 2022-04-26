@@ -50,6 +50,9 @@ class Main extends StatelessWidget {
               )),
           ConstrainedBox(
             constraints: BoxConstraints(minHeight: 50),
+            child: Icon(
+              Icons.add,
+            ),
           ),
         ]),
       ),
