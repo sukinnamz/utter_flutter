@@ -36,7 +36,7 @@ class Main extends StatelessWidget {
           left: 20,
           right: 20,
         ),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
           Text('Product Information',
               style: const TextStyle(
                 fontSize: 30,
