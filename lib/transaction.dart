@@ -14,7 +14,7 @@ class Main extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Add Product'),
+        title: Text('Add Product', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 40)),
         leading: IconButton(
           onPressed: () {},
           icon: Icon(Icons.arrow_back),
