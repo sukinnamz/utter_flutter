@@ -25,7 +25,7 @@ class Main extends StatelessWidget {
                 top: 10,
               ),
               child: ListTile(
-                leading: Image.asset(assets / icon.png),
+                leading: Image.asset(assets / icon),
                 trailing: Icon(Icons.delete),
                 title: Text(
                   "Let's eat some food",
