@@ -54,7 +54,7 @@ class Main extends StatelessWidget {
             child: ElevatedButton(
                 child: Text('+',
                     style: TextStyle(
-                      fontSize: 15,
+                      fontSize: 30,
                     )),
                 onPressed: onButtonPressed,
                 style: ElevatedButton.styleFrom(
