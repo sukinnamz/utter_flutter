@@ -49,10 +49,10 @@ class Main extends StatelessWidget {
                 fontSize: 17,
               )),
           new SizedBox(
-            width: 200.0,
+            width: 500.0,
             height: 100.0,
             child: ElevatedButton(
-              child: Text('+', style: TextStyle(color: Colors.blue, decoration: TextDecoration.overline)),
+              child: Text('+', style: TextStyle(color: Colors.white, decoration: TextDecoration.overline)),
               onPressed: onButtonPressed,
             ),
           ),
