@@ -48,6 +48,9 @@ class Main extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 17,
               )),
+          ConstrainedBox(
+            constraints: BoxConstraints(minHeight: 50),
+          ),
         ]),
       ),
     );
