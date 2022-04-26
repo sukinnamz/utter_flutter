@@ -1,49 +1,55 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:layout/home.dart';
+import 'package:layout/product.dart';
+import 'package:layout/transaction.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-
-  final List produk = [
-    "Lapis Legit",
-    "Putu Ayu",
-    "Selendang Mayang",
-    "Kue Talam",
-    "Bakpao Coklat",
-  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // Application name
-      title: 'Penugasan 2',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      title: 'Program Inventori',
+      home: Main(),
+    );
+  }
+}
+
+class Main extends StatelessWidget {
+  const Main({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoTabScaffold(
+      tabBar: CupertinoTabBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: 'Product',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Transaction',
+          ),
+        ],
       ),
-      // A widget which will be started on application startup
-      home: Scaffold(
-        appBar: AppBar(
-          leading: Icon(Icons.home),
-          title: Text('Produk'),
-        ),
-        body: ListView.builder(
-          itemBuilder: (context, index) {
-            return Card(
-              child: ListTile(
-                  title: Text(produk[index], style: TextStyle(fontSize: 30)),
-                  subtitle: Text('Klik untuk detail dari ' + produk[index], style: TextStyle(fontSize: 15)),
-                  leading: CircleAvatar(
-                    child: Text(produk[index][0], // ambil karakter pertama text
-                        style: TextStyle(fontSize: 20)),
-                  )),
-            );
-          },
-          itemCount: produk.length,
-        ),
-      ),
+      tabBuilder: (BuildContext context, int index) {
+        switch (index) {
+          case 0:
+            return Home();
+          case 1:
+            return Product();
+          case 2:
+            return Transaction();
+          default:
+            return Home;
+        }
+      },
     );
   }
 }
