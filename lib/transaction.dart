@@ -48,14 +48,18 @@ class Main extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 17,
               )),
-          ConstrainedBox(
-            constraints: BoxConstraints(minHeight: 50),
-            child: Icon(
-              Icons.add,
+          new SizedBox(
+            width: 200.0,
+            height: 100.0,
+            child: ElevatedButton(
+              child: Text('+', style: TextStyle(color: Colors.blue)),
+              onPressed: onButtonPressed,
             ),
           ),
         ]),
       ),
     );
   }
+
+  void onButtonPressed() {}
 }
