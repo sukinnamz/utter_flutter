@@ -25,7 +25,9 @@ class Main extends StatelessWidget {
                 top: 10,
               ),
               child: ListTile(
-                leading: Image.network("https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Ficon%2Famong-us-player-red%2F156942&psig=AOvVaw11U_I0ANVyZDxfYa97lE5X&ust=1651030856289000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKi3-7XnsPcCFQAAAAAdAAAAABAD"),
+                leading: Image.network(
+                  "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Ficon%2Famong-us-player-red%2F156942&psig=AOvVaw11U_I0ANVyZDxfYa97lE5X&ust=1651030856289000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKi3-7XnsPcCFQAAAAAdAAAAABAD",
+                ),
                 trailing: Icon(Icons.delete),
                 title: Text(
                   "Let's eat some food",
