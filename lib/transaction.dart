@@ -30,6 +30,23 @@ class Main extends StatelessWidget {
           icon: Icon(Icons.arrow_back),
         ),
       ),
+      body: Padding(
+        padding: const EdgeInsets.only(
+          top: 10,
+          left: 10,
+          right: 10,
+        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+          Text('Product Information',
+              style: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              )),
+          Text(
+            'Product Images',
+          )
+        ]),
+      ),
     );
   }
 }
