@@ -41,7 +41,8 @@ class Main extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.purpleAccent,
+                color: Colors.deepPurpleAccent,
+                decoration: TextDecoration.underline,
               )),
           Text(
             'Product Images',
