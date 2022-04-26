@@ -21,8 +21,8 @@ class Main extends StatelessWidget {
         flexibleSpace: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: <Color>[
-            Colors.green,
-            Colors.blue
+            Colors.blue,
+            Colors.white
           ])),
         ),
         leading: IconButton(
