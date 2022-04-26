@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:layout/home.dart';
-import 'package:layout/product.dart';
-import 'package:layout/transaction.dart';
+import 'package:helloworld/home.dart';
+import 'package:helloworld/product.dart';
+import 'package:helloworld/transaction.dart';
 
 void main() => runApp(MyApp());
 
@@ -47,7 +47,7 @@ class Main extends StatelessWidget {
           case 2:
             return Transaction();
           default:
-            return Home;
+            return Home();
         }
       },
     );
