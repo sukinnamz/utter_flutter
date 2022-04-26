@@ -52,7 +52,7 @@ class Main extends StatelessWidget {
             width: 200.0,
             height: 100.0,
             child: ElevatedButton(
-              child: Text('+', style: TextStyle(color: Colors.blue)),
+              child: Text('+', style: TextStyle(color: Colors.blue, decoration: TextDecoration.overline)),
               onPressed: onButtonPressed,
             ),
           ),
