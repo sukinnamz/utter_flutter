@@ -33,14 +33,15 @@ class Main extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(
           top: 10,
-          left: 10,
-          right: 10,
+          left: 20,
+          right: 20,
         ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
           Text('Product Information',
               style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
+                color: Colors.purpleAccent,
               )),
           Text(
             'Product Images',
