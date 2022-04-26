@@ -22,7 +22,7 @@ class Main extends StatelessWidget {
           decoration: BoxDecoration(
               gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: <Color>[
             Colors.blue,
-            Colors.white
+            Colors.purpleAccent
           ])),
         ),
         leading: IconButton(
