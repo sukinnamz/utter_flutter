@@ -66,6 +66,7 @@ class Main extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 17,
               )),
+          TextField(decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Input your product name')),
         ]),
       ),
     );
