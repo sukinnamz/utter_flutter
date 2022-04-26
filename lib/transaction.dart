@@ -44,9 +44,10 @@ class Main extends StatelessWidget {
                 color: Colors.deepPurpleAccent,
                 decoration: TextDecoration.underline,
               )),
-          Text(
-            'Product Images',
-          )
+          Text('Product Images',
+              style: const TextStyle(
+                fontSize: 17,
+              )),
         ]),
       ),
     );
